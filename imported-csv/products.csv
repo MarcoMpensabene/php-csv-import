@@ -1,0 +1,21 @@
+id,nome,prezzo,categoria_id
+1,Samsung Galaxy S24,899.00,1
+2,iPhone 15 Pro,1199.00,1
+3,Sony Bravia 65" OLED,1799.00,1
+4,Apple MacBook Air M3,1249.00,1
+5,Adidas Superstar,79.99,2
+6,Nike Air Max 90,119.99,2
+7,Levi's 501 Jeans,89.00,2
+8,Piumino North Face,229.00,2
+9,Set di Pentole Lagostina,149.00,3
+10,Aspirapolvere Dyson V15,649.00,3
+11,Macchina da Caffè Nespresso,179.00,3
+12,Robot da Cucina KitchenAid,549.00,3
+13,Il Signore degli Anelli,12.50,4
+14,1984 di George Orwell,9.99,4
+15,Harry Potter e la Pietra Filosofale,14.00,4
+16,Clean Code,34.99,4
+17,Racchetta da Tennis Wilson,99.00,5
+18,Scarpe da Running Brooks,129.00,5
+19,Bicicletta Mountain Bike,399.00,5
+20,Tavola da Surf,279.00,5
