@@ -57,3 +57,12 @@ if (isset($_POST["export"])) {
     fclose($output);
     exit;
 }
+
+$query = $conn->query("SELECT p.id, p.name, p.price, c.name as category 
+                       FROM products p 
+                       JOIN categories c ON p.category_id = c.id 
+                       ORDER BY p.id");
+$products = $query->fetchAll(PDO::FETCH_ASSOC);
+
+$queryCat = $conn->query("SELECT * FROM categories ORDER BY id");
+$categories = $queryCat->fetchAll(PDO::FETCH_ASSOC);
