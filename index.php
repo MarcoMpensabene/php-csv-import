@@ -2,18 +2,18 @@
 require_once 'database.php';
 require_once './script/import.php';
 require_once './script/export.php';
-echo "Connected successfully<br>";
 
 
-// element to show 
-$query = $conn->query("SELECT p.id, p.name, p.price, c.name as category 
+
+// elemenTI DA MOSTRARE 
+$queryProduct = $conn->query("SELECT p.id, p.name, p.price, c.name as category 
                        FROM products p 
                        JOIN categories c ON p.category_id = c.id 
                        ORDER BY p.id");
-$products = $query->fetchAll(PDO::FETCH_ASSOC);
+$products = $queryProduct->fetchAll(PDO::FETCH_ASSOC); // fetchAll(PDO::FETCH_ASSOC) recupera array associativo.
 
-$queryCat = $conn->query("SELECT * FROM categories ORDER BY id");
-$categories = $queryCat->fetchAll(PDO::FETCH_ASSOC);
+$queryCategory = $conn->query("SELECT * FROM categories ORDER BY id");
+$categories = $queryCategory->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">
